@@ -1,0 +1,42 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class='user-info'>
+    <image class='user-avatar' src='https://res.suning.cn/project/cmsWeb/suning/wxmini/images/suning/common/avatar.png'></image>
+    <view class='user-info-details'>
+      <text>Antonio</text>
+      <text>易购等级：</text>
+      <text>网购会员：</text>
+    </view>
+    <image class='image-level' src='https://res.suning.cn/project/crdnode/weChat/image/super_0.png?v=1' mode='aspacetFit'></image>
+  </view>
+  <view class='user-group'>
+
+    <view class='user-cell' bindtap='bingAllOrder'>
+      <image src='https://res.suning.cn/project/cmsWeb/suning/wxmini/images/suning/common/my_dd.png'></image>
+      <text class='cell-name next'>全部订单</text>
+    </view>
+    <view class='u-line line'></view>
+
+    <view class='user-cell' bindtap='bingPayOrder' >
+      <image src='https://res.suning.cn/project/cmsWeb/suning/wxmini/images/suning/common/my_dzf.png'></image>
+      <text class='cell-name next'>待支付</text>
+    </view>
+    <view class='u-line line'></view>
+
+    <view class='user-cell'>
+      <image src='https://res.suning.cn/project/cmsWeb/suning/wxmini/images/suning/common/my_dsh.png'></image>
+      <text class='cell-name next'>待收货</text>
+    </view>
+
+    <view class='bigline'></view>
+    <view class='user-cell'>
+      <image src='https://res.suning.cn/project/cmsWeb/suning/wxmini/images/suning/common/my_yhq.png'></image>
+      <text class='cell-name next'>我的优惠券</text>
+    </view>
+    <view class='bigline'></view>
+    <view class='user-cell'>
+      <image src='http://res.suning.cn/project/crdnode/weChat/image/huishou.png'></image>
+      <text class='cell-name next'>我的回收</text>
+    </view>
+  </view>
+</view>

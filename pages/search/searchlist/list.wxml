@@ -1,0 +1,35 @@
+<!--pages/search/searchlist/list.wxml-->
+<view class='top'>
+  <view class='search'>
+    <view bindtap='bindToSearch' class='search-body'>
+      <icon class='search-icon' size='16' type='search'></icon>
+      <text>搜索你想要的商品</text>
+    </view>
+  </view>
+</view>
+<view class='line'></view>
+<view class='nav'>
+  <text class="{{currentIndex==1?'nav-text-check':''}}" data-index='1' bindtap='bindCondition'>综合</text>
+  <text class="{{currentIndex==2?'nav-text-check':''}}" data-index='2' bindtap='bindCondition'>销量</text>
+  <text class="{{currentIndex==3?'nav-text-check':''}}" data-index='3' bindtap='bindCondition'>价格</text>
+  <text class="{{currentIndex==4?'nav-text-check':''}}" data-index='4' bindtap='bindCondition'>筛选</text>
+</view>
+<view class='line'></view>
+<scroll-view scrollY>
+<view class='goods'>
+  <view class='goods-item' wx:for='{{goods}}' wx:key='id'>
+    <image src="{{item.imgSrc==undefined?'https://imgservice1.suning.cn/uimg1/b2c/image/W90bRQX3UdWlHr7XBTDVZg==.jpg':host.imggoods+item.imgSrc}}" mode='aspacetFill' lazy-load='{{true}}'></image>
+    <view class='goods-item-right'>
+      <text>{{item.catentdesc}}</text>
+
+      <view class='item-totalCount'>
+        <view class='totalCount'>￥<text class='totalCount-text'>{{item.totalCount}}</text></view>
+        <view class='evaluate'>
+          <text>{{item.countOfarticle}}条评价</text>
+          <text class='praiseRate'>好评{{item.praiseRate}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view>

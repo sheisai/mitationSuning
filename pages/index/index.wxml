@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view>
+  <view class='search'>
+    <view bindtap='bindToSearch' class='search-body'>
+      <icon class='search-icon' size='16' type='search'></icon>
+      <text>搜索你想要的商品</text>
+    </view>
+  </view>
+  <block wx:if='{{cmsdata&&cmsdata.length}}' wx:for='{{cmsdata}}' wx:key='unique'>
+    <view wx:if="{{item.slider_v2&&item.slider_v2.tag}}" wx:key='unique'>
+      <swiper circular class='slider' autoplay='{{true}}' duration='1000' indicator-dots='{{true}}' indicator-color='#ffffff' indicator-active-color='#ff9900'>
+        <swiper-item class='slider-item' wx:key='unique' wx:for="{{item.slider_v2.tag}}">
+          <image mode='aspectFill' src='{{host.img+item.picUrl}}'></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class='nav' wx:if='{{item.icon_v2_detail&&item.icon_v2_detail.tag}}'>
+      <view class='nav-item' wx:for='{{item.icon_v2_detail.tag}}' wx:key='unique'>
+        <image class='nav-item-image' src='{{host.img+item.picUrl}}' mode='aspectFit'></image>
+        <text class='nav-item-title'>{{item.elementName}}</text>
+      </view>
+    </view>
+
+    <view class='adv' wx:if='{{item.bigAdv_v2&&item.bigAdv_v2.tag}}'>
+      <image class='adv-image' wx:key='unique' src='{{host.img+item.picUrl}}' wx:for='{{item.bigAdv_v2.tag}}' mode='aspectFit'></image>
+    </view>
+
+
+    <view class='benefit-top' wx:if='{{item.functionBtn_v2&&item.functionBtn_v2.tag}}'>
+      <view class='benefit-content'>
+        <view class='benefit-content-top'>
+          <view class='benefit-content-top-title'>
+            <image mode='aspectFit' src='https://res.suning.cn/project/crdnode/weChat/image/zsq.png'> </image>
+            <text>距离结束</text>
+            <text class='content-time'>00</text>
+            <text>:</text>
+            <text class='content-time'>00</text>
+            <text>:</text>
+            <text class='content-time'>00</text>
+          </view>
+          <view class='benefit-more'>
+            更多
+          </view>
+        </view>
+        <scroll-view scroll-x >
+        <view class='benefit-palamLists'>
+          <view class='benefit-item' wx:if='{{palamLists}}' wx:key='unique' wx:for='{{palamLists}}'>
+            <image class='benefit-item-image'  src='{{item.commListImgurl}}' ></image>
+            <text class='benefit-item-title'>¥{{item.gbPrice}}</text>
+            <text class='benefit-item-title-old'>¥{{item.snPrice}}</text>
+          </view>
+          
+        </view>
+        </scroll-view>
+      </view>
+    </view>
+
+
+
+    <view class='subsection-title' style='height:56rpx;' wx:if='{{item.title_v2&&item.title_v2.tag}}'>
+      <image class='adv-image' style='height:56rpx;' src='{{host.img+item.picUrl}}' wx:for='{{item.title_v2.tag}}' wx:key='unique' mode='aspectFit'></image>
+    </view>
+
+  </block>
+</view>

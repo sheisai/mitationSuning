@@ -1,0 +1,80 @@
+/* pages/search/searchlist/list.wxss */
+page{}
+.search {
+  padding: 20rpx 0rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  color: #aaa;
+  justify-content: center;
+}
+
+.search-body {
+
+  border-radius: 50rpx;
+  width: 720rpx;
+  height: 60rpx;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+}
+.search-icon{
+  margin-right: 15rpx;
+  margin-left: 28rpx;
+}
+.nav{
+height: 80rpx;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.nav text{
+  text-align: center;
+  width: 100%;
+}
+.nav-text-check{
+  color: #ff9900;
+}
+.goods-item{
+  margin: 20rpx;
+  display: flex;
+}
+.goods-item image{
+   width: 250rpx;
+   height: 250rpx;
+}
+.goods-item-right{
+  margin-left: 15rpx;
+  margin-top: 8rpx;
+  display: flex;
+  
+  width: 490rpx;
+  font-size: 13px;
+  flex-direction: column;
+}
+.item-totalCount{
+  justify-content: flex-end;
+  display: flex;
+  flex-grow:1;
+  flex-direction: column;
+}
+.totalCount{
+  color: #ff0000;
+  font-size: 12px;
+}
+.totalCount text{
+  font-size: 15px;
+}
+.evaluate{
+  margin-top: 15rpx;
+  color: #999999;
+  font-size: 12px;
+}
+.item-totalCount .praiseRate{
+  margin-left: 10rpx;
+  
+}

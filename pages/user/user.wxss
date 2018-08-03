@@ -1,0 +1,62 @@
+/* pages/user/user.wxss */
+page{
+  background: #eeeeee;
+}
+.user-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  height: 250rpx;
+  background-color: #ffc00c;
+}
+.user-avatar{
+  margin-left: 15rpx;
+  margin-right: 35rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.user-info-details{
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.user-info-details text:nth-child(2){
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.image-level{
+  position: absolute;
+  width: 240rpx;
+  height: 140rpx;
+  bottom: -15rpx;
+  right: 0;
+}
+.user-cell{
+   background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 13px;
+  height: 80rpx;
+}
+
+.user-cell image{
+  width: 50rpx;
+  margin-left: 15rpx;
+  margin-right: 35rpx;
+  height: 40rpx;
+}
+.cell-name{
+  width: 100%;
+  margin-right: 20rpx;
+ 
+}
+.user-group{
+  background-color: #ffffff;
+}
+.u-line{
+  padding-left: 15rpx;
+  margin-left: 15rpx;
+}

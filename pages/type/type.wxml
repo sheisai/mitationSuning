@@ -1,0 +1,40 @@
+<!--pages/type/type.wxml-->
+<view class='top'>
+  <view class='search'>
+    <view bindtap='bindToSearch' class='search-body'>
+      <icon class='search-icon' size='16' type='search'></icon>
+      <text>搜索你想要的商品</text>
+    </view>
+  </view>
+</view>
+<view class='line'></view>
+<view class='list-data'>
+  
+    <scroll-view scrollY  class='scroll-left'>
+      <view wx:for='{{types}}'>
+        <view bindtap='bindType' style="color:#{{leftData.id==item.id?(item.color==''?'FF6600':item.color):''}};border-left: 6rpx solid #{{leftData.id==item.id?(item.color==''?'FF6600':item.color):''}}" data-id='{{item.id}}' class="left-type-item {{leftData.id==item.id?'left-type-item-check':''}}">
+          {{item.dirName}}
+        </view>
+      </view>
+    </scroll-view>
+  
+  
+    <scroll-view scroll-top='{{scrolltop}}'  scrollY class='right-data' >
+      <view wx:for='{{leftData.children}}'>
+        <view class='right-data-title' wx:if='{{item.children&&item.children.length}}' >
+          <text class='right-data-title-msg' style="color:#{{leftData.color==''? 'FF6600':leftData.color}}">{{item.dirName}}</text>
+          <view class='title-line line' ></view>
+        </view>
+        <view class='right-data-list'>
+            <view bindtap='bindTypeClick' data-ci='{{item.pcCi}}' data-cf='{{item.seoCf}}' class='right-data-item' wx:for='{{item.children}}'>
+             <image src='{{item.imgWap}}' mode='aspacetFit'></image>
+             <text>{{item.dirName}}</text>
+            </view>
+           
+        </view>
+
+      </view>
+    </scroll-view>
+
+ 
+</view>

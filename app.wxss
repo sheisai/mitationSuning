@@ -1,0 +1,36 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.next{
+
+ display: flex;
+ justify-content: space-between;
+  align-items: center;
+}
+.next::after{
+  right: 15rpx;
+  content: "";
+  width: 15rpx;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rpx;
+  display:inline-block;
+  border: 3rpx solid #aaaaaa;
+  border-left: none;
+  background-color: #ffffff;
+  border-bottom: none;
+  transform: rotate(45deg)
+}
+.line{
+  border-bottom: 1rpx solid #eeeeee;
+}
+.bigline{
+  border-bottom: 30rpx solid #eeeeee;
+}

@@ -1,0 +1,141 @@
+/**index.wxss**/
+page{
+  background-color: #eeeeee;
+}
+.search {
+  
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  color: #aaa;
+  justify-content: center;
+}
+
+.search-body {
+  margin-top: 15rpx;
+  border-radius: 50rpx;
+  width: 720rpx;
+  height: 70rpx;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+}
+.search-icon{
+  margin-right: 15rpx;
+  margin-left: 28rpx;
+}
+.slider, .slider-item, .slider-item image {
+  width: 100%;
+  height: 368rpx;
+}
+.nav{
+  background-color: #ffffff;
+  padding: 20rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+}
+.nav-item{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: #333333;
+}
+.nav-item-image{
+   width: 100%;
+   margin-bottom: 10rpx;
+   height: 80rpx;
+}
+
+.adv,.adv-image{
+  width: 100%;
+  
+  height: 200rpx;
+}
+.adv{
+display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.adv-image{
+  width: 98%;
+
+}
+.benefit-content{
+  margin: 15rpx;
+  padding: 15rpx;
+  border-radius: 15rpx;
+  background-color: #ffffff;
+}
+.benefit-content-top{
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-content-top .content-time{
+  background-color: #333333;
+  padding: 0 5rpx;
+  color: #fff;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+.benefit-content-top-title{
+  display: flex;
+  width: 650rpx;
+  align-items: center;
+  justify-items: center;
+}
+.benefit-more{
+  width: 90rpx;
+  border-radius: 50rpx;
+  color: #fff;
+  display: inline-block;
+  height: 40rpx;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(#FDEA71,#FFAA01);
+}
+.benefit-content-top image{
+  width: 126rpx;
+  margin-right: 10rpx;
+  height: 46rpx;
+}
+/**掌上抢样式*/
+.benefit-palamLists{
+  display: flex;
+  flex-direction: row;
+}
+.benefit-item{
+  display: flex;
+  width: 160rpx;
+   
+  font-size: 12px;
+  margin-right: 10rpx;
+  flex-direction: column;
+}
+
+.benefit-item-image{
+    width: 158rpx;
+    margin-top: 15rpx;
+    height: 158rpx;
+}
+.benefit-item-title{
+  color: #ff0000;
+  margin-top: 10rpx;
+  font-size: 13px;
+}
+.benefit-item-title-old{
+   margin-top: 5rpx;
+  font-size: 12px;
+  color: #aaaaaa;
+  text-decoration:line-through;
+}
+

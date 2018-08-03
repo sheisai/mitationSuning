@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/type/type",
+    "pages/shoppingcar/shoppingcar",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/search/searchlist/list",
+    "pages/order/allorder",
+    "pages/order/pay/order",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "苏宁易购",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#ff9900",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/eg-index.png",
+      "selectedIconPath": "image/eg-indexactive.png"
+    },{
+      "pagePath": "pages/type/type",
+      "text": "分类",
+      "iconPath": "image/eg-list.jpg",
+      "selectedIconPath": "image/eg-listactive.jpg"
+    },
+    {
+      "pagePath": "pages/shoppingcar/shoppingcar",
+      "text": "购物车",
+      "iconPath": "image/eg-shopbus.png",
+      "selectedIconPath": "image/eg-shopbusactive.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "image/eg-user.png",
+      "selectedIconPath": "image/eg-useractive.png"
+    }]
+  }
+}
